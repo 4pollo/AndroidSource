@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LzOptionsMenu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="tips">请点击 Menu键显示选项菜单</string>
+    <string name="strOptions">选项</string>
+
+</resources>
