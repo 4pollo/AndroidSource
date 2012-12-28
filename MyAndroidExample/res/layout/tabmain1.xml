@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击menu键打开dock"/>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_alignParentBottom="true">
+		<LinearLayout android:layout_weight="1" android:id="@+id/tab1"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:visibility="invisible">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/tu5503_4" />
+			<TextView android:text="Tab1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_weight="1" android:id="@+id/tab2"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:gravity="center" android:orientation="vertical"
+			android:visibility="invisible">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/tu5503_5" />
+			<TextView android:text="Tab1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_weight="1" android:id="@+id/tab3"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:gravity="center" android:orientation="vertical"
+			android:visibility="invisible">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/tu5503_6" />
+			<TextView android:text="Tab1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_weight="1" android:id="@+id/tab4"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:gravity="center" android:orientation="vertical"
+			android:visibility="invisible">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/tu5503_7" />
+			<TextView android:text="Tab1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
+

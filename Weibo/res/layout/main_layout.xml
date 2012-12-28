@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/wb_bg_tabbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="3dip"
+            android:paddingBottom="2dip" >
+
+            <RadioButton
+                android:id="@+id/main_tab_main"
+                style="@style/MMTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/main_main_bg"
+                android:paddingBottom="2.0dp"
+                android:text="主页"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/main_tab_at"
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/main_at_bg"
+                android:paddingBottom="2.0dp"
+                android:text="提及"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/main_tab_search"
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/main_search"
+                android:paddingBottom="2.0dp"
+                android:text="广场"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/main_tab_message"
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/main_message_bg"
+                android:paddingBottom="2.0dp"
+                android:text="私信"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/main_tab_data"
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/main_data_bg"
+                android:paddingBottom="2.0dp"
+                android:text="资料"
+                android:textColor="@color/tab_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

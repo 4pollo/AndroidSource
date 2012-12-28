@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+     >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b1"
+        android:text="AndroidAlarm"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b2"
+        android:text="Gesture"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b3"
+        android:text="时间控件"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b4"
+        android:text="button"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b5"
+        android:text="list"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b6"
+        android:text="surfaceview"
+        />
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b7"
+        android:text="menu"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b8"
+        android:text="Dialog"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b9"
+        android:text="Tost"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b10"
+        android:text="ProgressDialog"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b11"
+        android:text="tab"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b12"
+        android:text="gridview"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b13"
+        android:text="gallery"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b14"
+        android:text="widget"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b15"
+        android:text="NotificationTest"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b16"
+        android:text="ViewFlipper/ViewPager"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b17"
+        android:text="SlidingDrawerTest"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b18"
+        android:text="翻页效果"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b19"
+        android:text="水纹效果"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/b20"
+        android:text="android 基础"
+        />
+
+</LinearLayout>
+
+</ScrollView>

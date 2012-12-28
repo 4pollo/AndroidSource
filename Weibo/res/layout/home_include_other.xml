@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/include_head"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/include_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="way"
+            android:textColor="@color/list_view_item_name_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/include_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="2dip"
+            android:src="@drawable/vip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/include_origtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:text="转播内容"
+        android:textColor="@color/list_view_item_black_color"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/include_pic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/include_pic"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/wb_watermark" />
+
+        <ImageView
+            android:id="@+id/include_more_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/include_pic"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/include_pic"
+            android:src="@drawable/wb_icon_album_entrance" />
+    </RelativeLayout>
+
+</LinearLayout>

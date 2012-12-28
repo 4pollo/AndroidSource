@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyAndroidExampleActivity!</string>
+    <string name="app_name">MyAndroidExample</string>
+     <string name="path">path</string>
+    <string name="downloadbutton">download</string>
+    <string name="sdcarderror">sdcarderror</string>
+    
+    <string name="prasetitle">xml解析</string>
+    <string name="prase_result">解析结果</string>
+
+</resources>

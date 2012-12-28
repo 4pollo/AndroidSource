@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_text_field"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/home_popup_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/home_popup_text_bg"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="全部"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/home_popup_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/home_popup_text_bg"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="认证用户"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/home_popup_between"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/home_popup_text_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="相互收听"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/home_popup_friend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/home_popup_text_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="QQ好友"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/home_popup_famous"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/home_popup_text_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="名人"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶栏 -->
+    <RelativeLayout
+        android:id="@+id/globalTop"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/txtBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/g_strTitle"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:background="@drawable/btn_back_normal" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dp"
+            android:background="@drawable/wb_icon_refresh_nor" />
+
+        <ImageView
+            android:id="@+id/home_popup_img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtBarTitle"
+            android:contentDescription="@string/hello_world"
+            android:paddingTop="5dip" />
+
+    </RelativeLayout>
+
+    <!-- 主内容框架 -->
+
+    <LinearLayout
+        android:id="@+id/MainWrap"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

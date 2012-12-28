@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:checkedButton="@+id/tongzhigonggao"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tongzhigonggao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pop_group"
+            android:button="@null"
+            android:gravity="center"
+            android:text="通知公告"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/jiaoxuedongtai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pop_group"
+            android:button="@null"
+            android:gravity="center"
+            android:text="教学动态"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/homepage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/radio_group"
+        android:cacheColorHint="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

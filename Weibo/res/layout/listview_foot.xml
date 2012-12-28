@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <ImageButton
+        android:id="@+id/listview_foot_more"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:background="@drawable/list_item_loadmore_bg"
+        android:clickable="true"
+        android:src="@drawable/wb_icon_tail_more_nor" />
+
+    <RelativeLayout
+        android:id="@+id/listview_foot_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加载中..."
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:indeterminateDrawable="@anim/custom_loading" />
+    </RelativeLayout>
+
+</FrameLayout>

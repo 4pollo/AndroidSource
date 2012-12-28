@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/btnStartMyService"
+		android:text="StartMyService"></Button>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/btnStopMyService"
+		android:text="StopMyService"></Button>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/btnBindMyService"
+		android:text="BindMyService"></Button>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/btnUnbindMyService"
+		android:text="UnbindMyService"></Button>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/btnExit"
+		android:text="退出程序"></Button>
+</LinearLayout>

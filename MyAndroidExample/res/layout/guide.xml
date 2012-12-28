@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <!-- <Gallery android:id="@+id/gImage" android:layout_width="fill_parent" android:spacing="1px" android:layout_height="fill_parent"/> -->
+
+    <com.test.gallery.test1.GuideGallery
+        android:id="@+id/gImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:spacing="1px" >
+    </com.test.gallery.test1.GuideGallery>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" >
+
+        <com.test.gallery.test1.PageIndicator
+            android:id="@+id/guide_pageindicator"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center" >
+        </com.test.gallery.test1.PageIndicator>
+    </LinearLayout>
+
+</RelativeLayout>

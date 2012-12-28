@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Get"
+		android:layout_width="match_parent"
+		android:id="@+id/toGetDemoActivityButton"></Button>
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Post"
+		android:layout_width="match_parent"
+		android:id="@+id/toPostDemoActivityButton"></Button>
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Rss"
+		android:id="@+id/toRssActivityButton"
+		android:layout_width="match_parent"></Button>
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Drawable"
+		android:id="@+id/toGetDrawableActivityButton"
+		android:layout_width="match_parent"></Button>
+
+</LinearLayout>
