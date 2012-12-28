@@ -4,7 +4,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -38,7 +37,7 @@ public class MainActivity extends BaseActivity {
 
 	private View loadMoreView;
 	private TextView loadMoreTextView;
-
+	private Handler handler;
 	private XMLParser parser = null;
 	private NodeList nl = null;
 	private int dataSize = 0;
@@ -47,8 +46,32 @@ public class MainActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentLayout(R.layout.main);
+		
+		// 初始化标题栏的各种事件
+		initTitle();
 
-		// 为左边的钮钮增加监听事件
+		// 实现分页加载数据，一次加载10条数据
+		initLoadMore();
+
+		adapter = new LazyAdapter(MainActivity.this);
+		list = (ListView) findViewById(R.id.list);
+		// 设置列表底部视图
+		list.addFooterView(loadMoreView);
+		// 将监听器的对象绑定到列对象上面
+		list.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// 这里可以自由发挥，比如播放一首歌曲等等
+			}
+		});
+		
+		// 初始化列表数据
+		initData();
+	}
+
+	private void initTitle() {
+		// 为右边的刷新按钮增加监听事件
 		getbtn_right().setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -59,10 +82,7 @@ public class MainActivity extends BaseActivity {
 				handler.postDelayed(new Runnable() {
 					@Override
 					public void run() {
-						adapter.clean(); // 清空所有数据
-						getData(); // 重新访问网络，获取数据
-						loadData();// 载入列表
-						adapter.notifyDataSetChanged();
+						initData();
 						setTitle(R.string.g_strTitle);
 						// 如果总记录大于10条，则显示底部视图
 						if (dataSize > PAGESIZE)
@@ -71,8 +91,9 @@ public class MainActivity extends BaseActivity {
 				}, 1000);
 			}
 		});
+	}
 
-		// 实现分页加载数据，一次加载10条数据
+	private void initLoadMore() {
 		loadMoreView = getLayoutInflater().inflate(R.layout.more, null);
 		loadMoreTextView = (TextView) loadMoreView.findViewById(R.id.loadMoreButton);
 		loadMoreTextView.setOnClickListener(new OnClickListener() {
@@ -93,43 +114,36 @@ public class MainActivity extends BaseActivity {
 				}, 100);
 			}
 		});
-
-		adapter = new LazyAdapter(MainActivity.this);
-		list = (ListView) findViewById(R.id.list);
-		list.addFooterView(loadMoreView);// 设置列表底部视图
-		// 将监听器的对象绑定到列对象上面
-		list.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				// 这里可以自由发挥，比如播放一首歌曲等等
-			}
-		});
-
+	}
+	
+	private void initData() {
+		// 清空所有数据
+		adapter.clean();
+		
 		// 创建一个线程来处理下载文件操作
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				Message msg = new Message();
 				msg.what = 0;
-				getData();
+				getData();  // 获取网络文件内容
 				loadData(); // 获取歌曲列表
 				handler.sendMessage(msg);
 			}
 		}).start();
+
+		// 接收消息
+		handler = new Handler() {
+			public void handleMessage(Message msg) {
+				switch (msg.what) {
+				case 0:
+					list.setAdapter(adapter);// 对ListView进行内容填充
+					break;
+				}
+			}
+		};
 	}
 
-	private Handler handler = new Handler() {
-		public void handleMessage(Message msg) {
-			switch (msg.what) {
-			case 0:
-				list.setAdapter(adapter);// 对ListView进行内容填充
-				break;
-			}
-		}
-	};
-
-	// 获取歌曲列表
 	private void getData() {
 		parser = new XMLParser();
 		String xml = parser.getXmlFromUrl(URL); // 从网络获取XML
