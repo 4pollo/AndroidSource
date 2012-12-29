@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">拖拉ListView</string>
+    <string name="strDuration">5:45</string>
+    <string name="strTitle">Rihanna Love the way lie</string>
+    <string name="strArtist">Just gona stand there and &#8230;</string>
+    <string name="strMore">查看更多 &#8230;</string>
+    <string name="strLoad">正在加载中 &#8230;</string>
+
+</resources>

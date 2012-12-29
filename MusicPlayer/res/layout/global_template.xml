@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <!-- 顶栏 -->
+
     <RelativeLayout
         android:id="@+id/globalTop"
         android:layout_width="match_parent"
@@ -48,7 +49,6 @@
             android:layout_toRightOf="@+id/txtBarTitle"
             android:contentDescription="@string/hello_world"
             android:paddingTop="5dip" />
-
     </RelativeLayout>
 
     <!-- 主内容框架 -->

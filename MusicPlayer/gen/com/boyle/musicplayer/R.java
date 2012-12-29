@@ -8,69 +8,23 @@
 package com.boyle.musicplayer;
 
 public final class R {
+    public static final class anim {
+        public static final int loading_l=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int ChattingSenderTextColor=0x7f04000c;
-        public static final int ConversationVoiceTextColor=0x7f04000d;
-        public static final int add_btn_text_color=0x7f04001c;
-        public static final int add_state_color_added=0x7f04001a;
-        public static final int add_state_color_waiting=0x7f04001b;
-        public static final int black=0x7f040002;
-        public static final int blue=0x7f040003;
-        public static final int chat_card_seperator_color=0x7f040036;
-        public static final int chatting_bg_purecolor=0x7f040016;
-        public static final int conatct_info_summary_color=0x7f040034;
-        public static final int conatct_info_weibo_link_color=0x7f040033;
-        public static final int dark_bg_color=0x7f04000f;
-        public static final int darkgrey=0x7f040006;
-        public static final int default_background_color=0x7f040035;
-        public static final int general_background_color=0x7f040038;
-        public static final int general_sub_background_color=0x7f040039;
-        public static final int grey=0x7f040005;
-        public static final int invite_btn_text_color=0x7f04001d;
-        public static final int lightgrey=0x7f040008;
-        public static final int lightransparent=0x7f04000a;
-        public static final int media_explorer_bg_color=0x7f040037;
-        public static final int mm_tab_btn=0x7f04003b;
-        public static final int navpage=0x7f04000e;
-        public static final int plugin_mail_grey=0x7f040017;
-        public static final int plugin_readerapp_header_color_news=0x7f040018;
-        public static final int plugin_readerapp_header_color_weibo=0x7f040019;
-        public static final int possible_result_points=0x7f040011;
-        public static final int readerapp_item_content_color=0x7f040030;
-        public static final int readerapp_item_date_color=0x7f04002f;
-        public static final int readerapp_item_divider_color=0x7f040032;
-        public static final int readerapp_item_time_color=0x7f040031;
-        public static final int red=0x7f040004;
-        public static final int result_view=0x7f040014;
-        public static final int sc_transparent_background=0x7f040000;
-        public static final int semitransparent=0x7f040009;
-        public static final int shake_info_text=0x7f040010;
-        public static final int sns_artist_background=0x7f04002e;
-        public static final int sns_artist_bg=0x7f040028;
-        public static final int sns_artist_desc=0x7f04002d;
-        public static final int sns_bg_color=0x7f040027;
-        public static final int sns_comment_color=0x7f040026;
-        public static final int sns_detail_normal_bg=0x7f04002c;
-        public static final int sns_detail_pressed_bg=0x7f04002b;
-        public static final int sns_dialog_transparent=0x7f04003a;
-        public static final int sns_like_color=0x7f04002a;
-        public static final int sns_line=0x7f040022;
-        public static final int sns_link_bg_color=0x7f040021;
-        public static final int sns_link_color=0x7f040020;
-        public static final int sns_loading_img=0x7f04001e;
-        public static final int sns_sign=0x7f040029;
-        public static final int sns_upload_text_normal=0x7f040023;
-        public static final int sns_upload_text_select=0x7f040024;
-        public static final int sns_word_color=0x7f040025;
-        public static final int toasterro=0x7f040007;
-        public static final int transparent=0x7f04000b;
-        public static final int viewfinder_frame=0x7f040012;
-        public static final int viewfinder_laser=0x7f040013;
-        public static final int viewfinder_mask=0x7f040015;
-        public static final int white=0x7f040001;
-        public static final int with_username=0x7f04001f;
+        public static final int black=0x7f050002;
+        public static final int blue=0x7f050003;
+        public static final int gray=0x7f050007;
+        public static final int grey=0x7f050005;
+        public static final int grey21=0x7f050006;
+        public static final int listTitle=0x7f050009;
+        public static final int red=0x7f050004;
+        public static final int region=0x7f050008;
+        public static final int sc_transparent_background=0x7f050000;
+        public static final int text=0x7f05000a;
+        public static final int white=0x7f050001;
     }
     public static final class drawable {
         public static final int arrow=0x7f020000;
@@ -80,47 +34,76 @@ public final class R {
         public static final int ic_launcher=0x7f020004;
         public static final int image_bg=0x7f020005;
         public static final int list_selector=0x7f020006;
-        public static final int no_image=0x7f020007;
-        public static final int rihanna=0x7f020008;
-        public static final int wb_icon_refresh_nor=0x7f020009;
+        public static final int loading_l001=0x7f020007;
+        public static final int loading_l002=0x7f020008;
+        public static final int loading_l003=0x7f020009;
+        public static final int loading_l004=0x7f02000a;
+        public static final int loading_l005=0x7f02000b;
+        public static final int loading_l006=0x7f02000c;
+        public static final int loading_l007=0x7f02000d;
+        public static final int loading_l008=0x7f02000e;
+        public static final int no_image=0x7f02000f;
+        public static final int pull_arrow=0x7f020010;
+        public static final int rihanna=0x7f020011;
+        public static final int wb_icon_refresh_nor=0x7f020012;
     }
     public static final class id {
-        public static final int MainWrap=0x7f080005;
-        public static final int artist=0x7f080009;
-        public static final int btnLeft=0x7f080002;
-        public static final int btnRight=0x7f080003;
-        public static final int duration=0x7f08000a;
-        public static final int globalTop=0x7f080000;
-        public static final int home_popup_img=0x7f080004;
-        public static final int list=0x7f08000b;
-        public static final int list_image=0x7f080007;
-        public static final int loadMoreButton=0x7f08000c;
-        public static final int menu_settings=0x7f08000d;
-        public static final int thumbnail=0x7f080006;
-        public static final int title=0x7f080008;
-        public static final int txtBarTitle=0x7f080001;
+        public static final int LoadStatusBox=0x7f090013;
+        public static final int MainWrap=0x7f09000d;
+        public static final int artist=0x7f090003;
+        public static final int btnLeft=0x7f09000a;
+        public static final int btnListLoadErr=0x7f090017;
+        public static final int btnRight=0x7f09000b;
+        public static final int downLoadErrMsgBox=0x7f090015;
+        public static final int downLoadErrText=0x7f090016;
+        public static final int duration=0x7f090004;
+        public static final int globalTop=0x7f090008;
+        public static final int head_arrowImageView=0x7f09000f;
+        public static final int head_contentLayout=0x7f09000e;
+        public static final int head_lastUpdatedTextView=0x7f090012;
+        public static final int head_progressBar=0x7f090010;
+        public static final int head_tipsTextView=0x7f090011;
+        public static final int home_popup_img=0x7f09000c;
+        public static final int list=0x7f090018;
+        public static final int list_image=0x7f090001;
+        public static final int loadMoreButton=0x7f090019;
+        public static final int load_more_tv=0x7f090006;
+        public static final int load_more_view=0x7f090005;
+        public static final int loading_layout=0x7f090007;
+        public static final int menu_settings=0x7f09001a;
+        public static final int progBar=0x7f090014;
+        public static final int thumbnail=0x7f090000;
+        public static final int title=0x7f090002;
+        public static final int txtBarTitle=0x7f090009;
     }
     public static final class layout {
-        public static final int global_template=0x7f030000;
-        public static final int list_row=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int more=0x7f030003;
+        public static final int drag_row=0x7f030000;
+        public static final int footer=0x7f030001;
+        public static final int global_template=0x7f030002;
+        public static final int head=0x7f030003;
+        public static final int list_row=0x7f030004;
+        public static final int loading=0x7f030005;
+        public static final int main=0x7f030006;
+        public static final int more=0x7f030007;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int g_strLeft=0x7f050008;
-        public static final int g_strRight=0x7f050009;
-        public static final int g_strTitle=0x7f05000a;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
-        public static final int strArtist=0x7f050005;
-        public static final int strDuration=0x7f050003;
-        public static final int strLoad=0x7f050007;
-        public static final int strMore=0x7f050006;
-        public static final int strTitle=0x7f050004;
+        public static final int app_name=0x7f060000;
+        public static final int g_strLeft=0x7f06000a;
+        public static final int g_strRight=0x7f06000b;
+        public static final int g_strTitle=0x7f06000c;
+        public static final int hello_world=0x7f060001;
+        public static final int listReBtnText=0x7f06000d;
+        public static final int menu_settings=0x7f060002;
+        public static final int strArtist=0x7f060005;
+        public static final int strDuration=0x7f060003;
+        public static final int strLastUpdated=0x7f060009;
+        public static final int strLoad=0x7f060007;
+        public static final int strMore=0x7f060006;
+        public static final int strPullTips=0x7f060008;
+        public static final int strTitle=0x7f060004;
     }
     public static final class style {
         /** 
@@ -144,10 +127,12 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
+        public static final int Btn=0x7f070003;
+        public static final int loading=0x7f070002;
     }
 }

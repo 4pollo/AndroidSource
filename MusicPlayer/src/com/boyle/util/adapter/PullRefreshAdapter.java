@@ -15,13 +15,13 @@ import com.boyle.model.MusicModel;
 import com.boyle.musicplayer.R;
 import com.boyle.utils.ImageLoader;
 
-public class LazyAdapter extends BaseAdapter {
+public class PullRefreshAdapter extends BaseAdapter {
 
 	private Vector<MusicModel> mModels = new Vector<MusicModel>();
 	private static LayoutInflater inflater = null;
 	public ImageLoader imageLoader; // 用来下载图片的类，后面有介绍
 
-	public LazyAdapter(Activity activity) {
+	public PullRefreshAdapter(Activity activity) {
 		super();
 		this.inflater = (LayoutInflater) activity
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -69,10 +69,12 @@ public class LazyAdapter extends BaseAdapter {
 		ImageView thumb_image = (ImageView) vi.findViewById(R.id.list_image); // 缩略图
 
 		MusicModel model = mModels.get(position);
+		
 		String strTitle = model.getTitle();
 		// 如果字符串长度大于20，则后面的显示省略号
 		strTitle = (strTitle.length() > 20) ? (strTitle.substring(0, 20) + "...")
 				: strTitle;
+		
 		title.setText(strTitle);
 		artist.setText(model.getId() + "/" + model.getArtist());
 		duration.setText(model.getDuration());
